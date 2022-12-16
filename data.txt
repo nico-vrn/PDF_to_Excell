@@ -1,0 +1,10 @@
+Command Injection 2 High
+Absolute Path Traversal 1 Medium
+Input Path Not Canonicalized 1 Medium
+Improper Resource Access Authorization 3 Low
+Incorrect Permission Assignment For Critical Resources 3 Lo
+Use Of Hardcoded Password 3 Low
+Client Insufficient  ClickJacking  Protection 1 Low
+Log Forging 1 Low
+Stored Absolute  Path Traversal 1 Low
+Insufficient Logging  of Exceptions 2 Information
