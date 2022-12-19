@@ -1,10 +1,20 @@
-Command Injection 2 High
-Absolute Path Traversal 1 Medium
-Input Path Not Canonicalized 1 Medium
-Improper Resource Access Authorization 3 Low
-Incorrect Permission Assignment For Critical Resources 3 Lo
-Use Of Hardcoded Password 3 Low
+Reflected XSS All Clients 37 High
+Heap Inspection 1 Medium
+HttpOnlyCookies In Config 1 Medium
+Missing HSTS Header 1 Medium
+Privacy Violation 1 Mediu
+Unprotected Cookie 35 Low
+Unsafe Use Of Target blank 35 Low
+Unsafe Use Of Target blank 35 Low
+Information Exposure  Through an Error Message 7 Low
+Client Hardcoded  Domain 6 Low
+Use Of Hardcoded Password 4 Low
+Client Use Of Iframe  Without Sandbox 2 Low
 Client Insufficient  ClickJacking  Protection 1 Low
-Log Forging 1 Low
-Stored Absolute  Path Traversal 1 Low
-Insufficient Logging  of Exceptions 2 Information
+Client Password In Comment 1 Low
+Client Password In Comment 1 Low
+DebugEnabled 1 Low
+Missing Content  Security Policy 1 Low
+Missing X Frame  Options 1 Low
+Unencrypted Web Config File 1 Low
+Insufficient Logging  of Exceptions 1 Information
