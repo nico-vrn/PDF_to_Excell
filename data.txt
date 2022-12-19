@@ -1,20 +1,39 @@
-Reflected XSS All Clients 37 High
-Heap Inspection 1 Medium
-HttpOnlyCookies In Config 1 Medium
+Reflected XSS All Clients 15 High
+Connection String  Injection 5 High
+Deserialization of Untrusted Data 3 High
+SQL Injection 3 High
+Client DOM Stored  Code Injection 1 Hig
+Code Injection 1 High
+Heap Inspection 47 Medium
+Path Traversal 33 Medium
+Reflected XSS Specific Clients 23 Medium
+Cross Site History Manipulation 14 Medium
+HttpOnlyCookies In Config 7 Medium
+Insufficient Connection String Encryption 5 Medium
+Parameter Tampering 3 Medium
+No Request Validation 2 Medium
+Value Shadowing 2 Medium
 Missing HSTS Header 1 Medium
-Privacy Violation 1 Mediu
-Unprotected Cookie 35 Low
-Unsafe Use Of Target blank 35 Low
-Unsafe Use Of Target blank 35 Low
-Information Exposure  Through an Error Message 7 Low
-Client Hardcoded  Domain 6 Low
-Use Of Hardcoded Password 4 Low
-Client Use Of Iframe  Without Sandbox 2 Low
+Improper Exception Handling 213 Low
+Thread Safety Issue 50 Low
+Improper Resource Shutdown or Release 26 Low
+Information Exposure  Through an Error Message 19 Low
+Cleansing Canonicalization  and Comparison Errors 15 Low
+Password in Configuration File 10 Low
+Client Side Only Validation 7 Low
+Missing X Frame  Options 7 Low
+Unencrypted Web Config File 7 Low
+Dangerous File Upload 4 Low
+Blind SQL Injections 3 Low
+Client Regex Injection 2 Low
+Hardcoded Absolute Path 2 Low
 Client Insufficient  ClickJacking  Protection 1 Low
-Client Password In Comment 1 Low
-Client Password In Comment 1 Low
+Client Use Of Iframe  Without Sandbox 1 Low
 DebugEnabled 1 Low
+Directory Browse 1 Low
+Improper Transaction  Handling 1 Low
+Log Forging 1 Low
 Missing Content  Security Policy 1 Low
-Missing X Frame  Options 1 Low
-Unencrypted Web Config File 1 Low
-Insufficient Logging  of Exceptions 1 Information
+TraceEnabled 1 Low
+Insufficient Logging  of Exceptions 2711 Information
+Insufficient Logging  of Database Actions 4 Information
