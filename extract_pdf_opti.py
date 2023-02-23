@@ -126,52 +126,41 @@ def ecris_fichier(sousChaine, name):
     fichier.close()
 
 ecris_fichier(sousChaine, "data.txt")
-nb_ligne=countLigne("data.txt")
-print("Nombre de lignes dans fichier :",nb_ligne)
 
-nb_mot = len(sousChaine.split())
-print("Nombre de mot :",nb_mot)
+print("-------- 7 remove page ----------")
 
-
-print("-------- 7 rendre jolie ----------")
-"""def rendre_jolie(s):
-    all_text2 = s.split("\n")
-    print(f"all_text1: {all_text2}")
-    del all_text2[-1]
-    del all_text2[0]
-    for i, text in enumerate(all_text2):
+def remove_page(s):
+    for i, text in enumerate(s):
         if "PAGE" in text:
-            print("Le mot PAGE se trouve à la position :", i)
+            #print("Le mot PAGE se trouve à la position :", i)
             find_place=i
-            break
-    print("place :",find_place)
-    string_garder=all_text2[find_place]
-    print("string_garder :",string_garder)
-    string_garder = string_garder.split()
-    print("string_garder :",string_garder)
-    for i, text in enumerate(string_garder):
-        if "PAGE" in text:
-            print("Le mot PAGE se trouve à la position :", i)
-            find_place2=i
-            break
-    del string_garder[find_place2:find_place2+4]
-    print("string_garder :",string_garder)
-    del all_text2[find_place]
-    all_text2.insert(find_place, " ".join(string_garder))
-    print(f"\n\nall_text222: {all_text2}")
-    return all_text2
-    """
+            #print("place :",find_place)
+            string_garder=s[find_place]
+            #print("string_garder :",string_garder)
+            string_garder = string_garder.split()
+            #print("string_garder :",string_garder)
+            for i, text in enumerate(string_garder):
+                if "PAGE" in text:
+                    #print("Le mot PAGE se trouve à la position :", i)
+                    find_place2=i
+                    break
+            del string_garder[find_place2:find_place2+4]
+            #print("string_garder :",string_garder)
+            del s[find_place]
+            s.insert(find_place, " ".join(string_garder))
+           #print(f"\n\nall_text222: {s}")
+    return s
 
 print("-------- 8 boucle ----------")
 
-def Recup(s, nb_ligne):
-    #all_text2 = rendre_jolie(s)
+def Recup(s):
     all_text2 = s.split("\n")
+    all_text2 = remove_page(all_text2)
     del all_text2[-1]
     del all_text2[0]
-    print(f"all_text2: {all_text2}")
+    print(f"all_text2: {all_text2} \n\n")
     chaine="\n".join(all_text2)
-    print("\nchaine :",chaine)
+    #print("\nchaine :",chaine)
     chaine.count("\n")
     ecris_fichier(chaine, "data2.txt")
     h = 0
@@ -199,10 +188,11 @@ def Recup(s, nb_ligne):
         c3.value = ' '.join(aprs_nombre)
         #print("c3.value :",c3.value)
         h += 1
-        print(f"h: {h}")
+        #print(f"h: {h}")
         if h == nb_ligne:
             print("Fin de boucle")
             break
+    print("Nombre de ligne écrite:", h, "sur", nb_ligne)
     wb.save(nom_excell)
 
-Recup(sousChaine,nb_ligne)
+Recup(sousChaine)
