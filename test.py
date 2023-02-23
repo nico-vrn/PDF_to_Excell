@@ -130,20 +130,27 @@ print("-------- 6 rendre jolie ----------")
 def rendre_jolie(s):
     all_text2 = s.split("\n")
     print(f"all_text111: {all_text2}")
-    all_text2 = [t for t in all_text2 if t.strip()] # Supprimer les éléments vides
-    find_places = [i for i, text in enumerate(all_text2) if "PAGE" in text] # Trouver les positions des mots "PAGE"
-    print(f"Les mots PAGE se trouvent aux positions : {find_places}")
-    if not find_places: # S'il n'y a pas de mot "PAGE", retourner la liste d'origine
-        return all_text2
-    find_place = find_places[0] # Prendre la première occurrence
-    string_garder = all_text2[find_place].split()
+    del all_text2[-1]
+    del all_text2[0]
+    for i, text in enumerate(all_text2):
+        if "PAGE" in text:
+            print("Le mot PAGE se trouve à la position :", i)
+            find_place=i
+            break
+    print("place :",find_place)
+    string_garder=all_text2[find_place]
     print("string_garder :",string_garder)
-    find_place2 = next((i for i, text in enumerate(string_garder) if "PAGE" in text), None) # Trouver la position du mot "PAGE" dans la sous-liste
-    if find_place2 is not None:
-        del string_garder[find_place2:find_place2+4] # Supprimer les éléments qui suivent le mot "PAGE"
-    else: # Si le mot "PAGE" n'est pas trouvé dans la sous-liste, retourner la liste d'origine
-        return all_text2
-    all_text2[find_place] = " ".join(string_garder)
+    string_garder = string_garder.split()
+    print("string_garder :",string_garder)
+    for i, text in enumerate(string_garder):
+        if "PAGE" in text:
+            print("Le mot PAGE se trouve à la position :", i)
+            find_place2=i
+            break
+    del string_garder[find_place2:find_place2+4]
+    print("string_garder :",string_garder)
+    del all_text2[find_place]
+    all_text2.insert(find_place, " ".join(string_garder))
     print(f"\n\nall_text222: {all_text2}")
     return all_text2
 
