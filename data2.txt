@@ -1,0 +1,122 @@
+Reflected XSS All Clients 1071 High
+Command Injection 304 High
+SQL Injection 216 High
+Second Order SQL Injection 44 High
+Stored XSS 24 High
+Client DOM XSS 14 High
+Code Injection 6 High
+Connection String  Injection 5 High
+Deserialization of Untrusted Data 3 High
+Client DOM Stored  XSS 1 High
+LDAP Injection 1 High
+Trust Boundary  Violation 1683 Medium
+Unchecked Input for Loop Condition 1431 Medium
+XSRF 1148 Medium
+Privacy Violation 404 Medium
+Input Path Not Canonicalized 217 Medium
+Heap Inspection 71 Medium
+Absolute Path Traversal 52 Medium
+External Control of System or Config Setting 33 Medium
+SSRF 33 Medium
+Cross Site History Manipulation 29 Medium
+Improper Restriction of Stored  XXE Ref 27 Medium
+Parameter Tampering 27 Medium
+Client Potential XSS 18 Medium
+HTTP Response Splitting 16 Medium
+Cleartext Submission of Sensitive Information 15 Medium
+Inadequate Encryption Strength 15 Medium
+Improper Restriction of XXE Ref 13 Medium
+DoS by Sleep 10 Medium
+Dangerous File Inclusion 9 Medium
+Use of System exit 6 Medium
+Client Privacy Violation 5 Medium
+Hardcoded password in Connection  String 4 Medium
+ReDoS From Regex Injection 4 Medium
+Download of Code Without Integrity Check 3 Medium
+ReDoS In Replace 3 Medium
+Use of Cryptographically Weak PRNG 3 Medium
+Use of Hard coded Cryptographic Key 3 Medium
+Use of Insufficiently Random Values 3 Medium
+HttpOnlyCookies 1 Medium
+HttpOnlyCookies In Config 1 Medium
+Missing HSTS Header 1 Medium
+Plaintext Storage of a Password 1 Medium
+Unvalidated SSL Certificate Hostname 1 Medium
+Use of a One Way Hash without  a Salt 1 Medium
+Improper Resource Access Authorization 3299 Low
+Potential Stored XSS 3097 Low
+Stored Boundary Violation 2975 Low
+Portability Flaw Locale Dependent  Comparison 1775 Low
+Improper Resource Shutdown or Release 1634 Low
+Potential O Reflected XSS All Clients 1230 Low
+Authorization Bypass Through User Controlled SQL 
+PrimaryKey613 Low
+Improper Exception Handling 604 Low
+Log Forging 576 Low
+Information Exposure  Through an Error Message 405 Low
+Integer Overflow 404 Low
+Integer Underflow 404 Low PAGE 14 OF  2039
+Stored Log Forging 304 Low
+Client Potential DOM Open Redirect 237 Low
+Incorrect Permission Assignment For Critical Resources 233 Low
+Stored Relative  Path Traversal 216 Low
+Blind SQL Injections 162 Low
+Uncontrolled Memory Allocation 120 Low
+Client Use Of Iframe  Without Sandbox 115 Low
+Information Leak Through Comments 99 Low
+Escape False 89 Low
+Insufficiently Protected Credentials 81 Low
+Heuristic Stored XSS 65 Low
+Unsafe Use Of Target blank 56 Low
+Unsafe Use Of Target blank 55 Low
+Public Data Assigned to Private Array 52 Low
+Private Array Returned From A Public Method 50 Low
+Heuristic SQL Injection 43 Low
+Relative Path Traversal 34 Low
+Use Of Hardcoded Password 32 Low
+Race Condition Format Flaw 27 Low
+Stored Absolute  Path Traversal 26 Low
+Suspected XSS 25 Low
+Heuristic CGI Stored XSS 23 Low
+DB Control  of System or Config Setting 22 Low
+Hardcoded Absolute Path 20 Low
+Data Leak Between  Sessions 16 Low
+Improper Transaction  Handling 16 Low
+Password In Comment 10 Low
+Race Condition 10 Low
+Use Of Hardcoded Password 10 Low
+Unprotected Cookie 9 Low
+Heuristic XSRF 8 Low
+Exposure of System Data 7 Low
+Use of Broken or Risky Cryptographic  Algorithm 6 Low
+Use Of getenv 6 Low
+Potential ReDoS 5 Low
+Client DOM Open  Redirect 4 Low
+Client JQuery Deprecated Symbols 4 Low
+Creation of Temp  File in Dir with Incorrect Permissions 4 Low
+Insufficient Session Expiration 4 Low
+Client Potential ReDoS In Match 3 Low
+Channel Accessible by NonEndpoint 2 Low
+Client Regex Injection 2 Low
+Collapse of Data into Unsafe Value 2 Low
+Just One of Equals and Hash code Defined 2 Low
+Object Hijack 2 Low
+Public Static Final References  Mutable Object 2 Low
+Reversible One Way Hash 2 Low
+Unrestricted File Upload 2 Low
+Client Insufficient  ClickJacking  Protection 1 Low
+Cookie Overly  Broad Path 1 Low
+Information Exposure  Through Debug Log 1 Low
+Missing Content  Security Policy 1 Low
+Missing X Frame  Options 1 Low PAGE 15 OF  2039
+Open Redirect 1 Low
+Parse Double DoS 1 Low
+Sensitive Cookie in HTTPS Session Without  Secure 
+Attribute1 Low
+Serializable Class Containing Sensitive Data 1 Low
+Spring defaultHtmlEscape Not True 1 Low
+Stored Code Injection 1 Low
+Stored HTTP Response Splitting 1 Low
+Insufficient Logging  of Exceptions 5909 Information
+Insufficient Logging  of Database Actions 801 Information
+Portability Flaw In File Separator 112 Information
