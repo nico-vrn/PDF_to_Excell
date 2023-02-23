@@ -2,7 +2,7 @@ Reflected XSS All Clients 1071 High
 Command Injection 304 High
 SQL Injection 216 High
 Second Order SQL Injection 44 High
-Stored XSS 24 High
+Stored XSS 24 High PAGE 13 OF  2039
 Client DOM XSS 14 High
 Code Injection 6 High
 Connection String  Injection 5 High

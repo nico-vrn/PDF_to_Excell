@@ -134,8 +134,7 @@ print("Nombre de mot :",nb_mot)
 
 
 print("-------- 7 rendre jolie ----------")
-
-def rendre_jolie(s):
+"""def rendre_jolie(s):
     all_text2 = s.split("\n")
     print(f"all_text1: {all_text2}")
     del all_text2[-1]
@@ -161,27 +160,33 @@ def rendre_jolie(s):
     all_text2.insert(find_place, " ".join(string_garder))
     print(f"\n\nall_text222: {all_text2}")
     return all_text2
+    """
 
 print("-------- 8 boucle ----------")
 
 def Recup(s, nb_ligne):
-    all_text2 = rendre_jolie(s)
+    #all_text2 = rendre_jolie(s)
+    all_text2 = s.split("\n")
+    del all_text2[-1]
+    del all_text2[0]
+    print(f"all_text2: {all_text2}")
     chaine="\n".join(all_text2)
-    #print("\nchaine :",chaine)
+    print("\nchaine :",chaine)
     chaine.count("\n")
-    print("Nombre de ligne2 :",chaine.count("\n")+1)
     ecris_fichier(chaine, "data2.txt")
     h = 0
     nb_ligne = chaine.count("\n")+1
     print("nombre de ligne:", nb_ligne)
     for row in all_text2:
         text_obtenu = list(row.split(" "))
+        #print(f"text_obtenu: {text_obtenu}")
         index_nombre = [i for i in range(len(text_obtenu)) if text_obtenu[i].isdigit()]
         if not index_nombre:
             # Si la liste est vide, passer à la ligne suivante
+            print("\n\nWTF Pas de nombre dans cette ligne", h, ":", text_obtenu)
             continue
         index_nombre = index_nombre[0]
-        print(f"index_nombre: {index_nombre}")
+        #print(f"index_nombre: {index_nombre}")
         avant_nombre, nombre, aprs_nombre = text_obtenu[:index_nombre], text_obtenu[index_nombre], text_obtenu[index_nombre+1:]
         #print(avant_nombre, nombre, aprs_nombre)
         c1 = sheet.cell(row=h+1, column=1)
@@ -195,8 +200,8 @@ def Recup(s, nb_ligne):
         #print("c3.value :",c3.value)
         h += 1
         print(f"h: {h}")
-        print(f"nb_ligne: {nb_ligne}")
-        if row in all_text2[-1]:
+        if h == nb_ligne:
+            print("Fin de boucle")
             break
     wb.save(nom_excell)
 
