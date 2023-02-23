@@ -2,26 +2,18 @@ from PyPDF2 import PdfReader
 import openpyxl
 
 #demander nom du excel
-#nom_excell=input("Nom du fichier excel : ")
-nom_excell="test.xlsx"
+nom_excell=input("Nom du fichier excel : ")
 
-"""
+
 #demander position
 position1=input("Position 1 : ")
 #position2=input("Position 2 : ")
 position3=input("Position 3 : ")
 position4=input("Position 4 : ")
-position5=input("Position 5 : ")"""
-
-position1='Reflected'
-#position2=input("Position 2 : ")
-position3='Client'
-position4='Stored'
-position5='Open'
 
 #demander nom du fichier pdf
-#nom_fichier=input("Nom du fichier pdf : ")
-nom_fichier='02789_gpf_dsifs_checkmarx_20221130-154117.pdf'
+nom_fichier=input("Nom du fichier pdf : ")
+
 
 wb = openpyxl.Workbook()
 sheet = wb.active
@@ -43,10 +35,6 @@ page3 = reader.pages[13]
 text3 = page3.extract_text()
 print("Page 3 :",text3) 
 
-page4 = reader.pages[14]
-text4 = page4.extract_text()
-print("Page 4 :",text4) 
-
 print("-------- 2 Sortie des données page 12 ----------")
 
 pos1 = text.find(position1)
@@ -64,20 +52,13 @@ print (sousChaine2)
 print("-------- 3 Sortie des données page 14 ----------")
 
 pos5 = text3.find(position4)
-pos6 = text3.find('Z')
+pos6 = text3.find('10 Most')
 sousChaine3 = text3[pos5:pos6]
 print (sousChaine3)
 
-print("-------- 3 Sortie des données page 15 ----------")
-
-pos7 = text4.find(position5)
-pos8 = text4.find('10 Most')
-sousChaine4 = text4[pos7:pos8]
-print (sousChaine4)
-
 print("-------- 4 Concaténation données ----------")
 
-pdf_total=sousChaine+"\n"+sousChaine2+"\n"+sousChaine3+"\n"+sousChaine4
+pdf_total=sousChaine+"\n"+sousChaine2+"\n"+sousChaine3
 print(pdf_total)
 pdf_total.splitlines()
 
@@ -95,19 +76,22 @@ def countLigne(fichier):
     return i
 
 print("-------- 6 Ecrire dans fichier ----------")
-"""
+
 fichier = open("data.txt", "w")
 fichier.write(pdf_total)
-fichier.close()"""
+fichier.close()
+
 nb_ligne=countLigne("data.txt")
 print("Nombre de ligne :",nb_ligne)
+
 nb_mot = len(pdf_total.split())
 print("Nombre de mot :",nb_mot)
 
+""""
 fichier = open("data.txt", "r")
 pdf_total=fichier.read()
 fichier.close()
-print(pdf_total)
+print(pdf_total)"""
 
 print("-------- 7 boucle ----------")
 
