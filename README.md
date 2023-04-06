@@ -2,18 +2,37 @@
 Ce programme écrit en Python récupère toutes les vulnérabilités d'un fichier d'analyse Checkmarx et les intégres dans un fichier Excel.
 
 # Installation
-Clonez le dépôt :
+1. Clonez le dépôt :
 
 ```git clone https://github.com/nico-vrn/PDF_to_Excell.git ```
 
+2. Installez les dépendances :
+
+```pip install -r requirements.txt```
+
 # Utilisation
-1. Placez votre fichier d'analyse Checkmarx dans le répertoire input/.
+1. Placez votre fichier d'analyse Checkmarx dans le répertoire du projet.
 
 2. Exécutez le programme en utilisant la commande suivante :
 
 ```python extract_pdf.py```
 
-3. Le fichier Excel contenant les vulnérabilités et les classes sera généré dans le répertoire du projet.
+3. Entrez le nom du fichier PDF que vous souhaitez analyser (sans l'extension .pdf) ainsi que le nom du fichier Excel que vous souhaitez créer.
+
+4. Choisissez la langue du fichier PDF (fr ou en).
+
+5. Le fichier Excel contenant les vulnérabilités et les classes sera généré dans le répertoire du projet.
+
+# Fonctionnement du script
+Le script suit les étapes suivantes :
+
+1. Demander à l'utilisateur le nom du fichier PDF à récupérer, le nom du fichier Excel à créer et la langue du fichier PDF.
+2. Trouver les pages à extraire en fonction de la langue choisie.
+3. Extraire le texte de chaque page et le stocker dans une variable globale pour chaque page.
+4. Extraire les données de toutes les pages et les stocker dans une variable.
+5. Compter le nombre de lignes de la variable.
+6. Écrire le résultat dans un fichier texte nommé "data.txt".
+7. Supprimer les numéros de page dans les données extraites.
 
 # Contributions
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
