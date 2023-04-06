@@ -17,7 +17,7 @@ Ce programme écrit en Python récupère toutes les vulnérabilités d'un fichie
 
 ```python extract_pdf.py```
 
-3. Entrez le nom du fichier PDF que vous souhaitez analyser (sans l'extension .pdf) ainsi que le nom du fichier Excel que vous souhaitez créer.
+3. Entrez le nom du fichier PDF que vous souhaitez analyser (sans l'extension .pdf).
 
 4. Choisissez la langue du fichier PDF (fr ou en).
 
