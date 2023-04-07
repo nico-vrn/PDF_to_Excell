@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/nico-vrn/PDF_to_Excell">
-    <img src="images/logo.jpg" alt="Logo" width="100" height="80">
+    <img src="images/logo.jpg" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">PDF to excell</h3>
@@ -30,7 +30,7 @@ git clone https://github.com/nico-vrn/PDF_to_Excell.git
 pip install -r requirements.txt
 ```
 
-# Utilisation
+## Utilisation
 1. Placez votre fichier d'analyse Checkmarx dans le répertoire du projet.
 
 2. Exécutez le programme en utilisant la commande suivante :
@@ -45,7 +45,7 @@ python extract_pdf.py
 
 5. Le fichier Excel contenant les vulnérabilités et les classes sera généré dans le répertoire du projet.
 
-# Fonctionnement du script
+## Fonctionnement du script
 Le script suit les étapes suivantes :
 
 1. Demander à l'utilisateur le nom du fichier PDF à récupérer, le nom du fichier Excel à créer et la langue du fichier PDF.
@@ -56,7 +56,7 @@ Le script suit les étapes suivantes :
 6. Écrire le résultat dans un fichier texte nommé "data.txt".
 7. Supprimer les numéros de page dans les données extraites.
 
-# Contributions
+## Contributions
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
 
 1. Fork ce projet.
@@ -81,8 +81,8 @@ git push origin ma-nouvelle-fonctionnalite
 
 5. Faites une pull request depuis votre branche vers la branche principale de ce projet.
 
-# Licence
+## Licence
 Ce projet est sous licence MIT. Veuillez consulter le fichier `LICENSE` pour plus d'informations.
 
-# Auteurs
+## Auteurs
 Lefranc Nicolas : Développeur principal
